@@ -1,6 +1,7 @@
 import React from 'react';
 import { Navbar, NavbarBrand, NavbarToggler,Collapse, Nav,  NavItem, NavLink, UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, NavbarText, Button } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import CartWidget from './CartWidget';
 
 const NavBar = () => {
     return (
@@ -59,11 +60,7 @@ const NavBar = () => {
       </Nav>
       <NavbarText>
       <div>
-  <Button
-    color="danger"
-  >
-    Comprar
-  </Button>
+  <CartWidget/>
 </div>
       </NavbarText>
     </Collapse>
